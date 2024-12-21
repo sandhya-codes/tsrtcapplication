@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <fieldset>
+        <center>
+            
+            <img src="profile.jpg" width="100">
+            <h1> TELANGANA STATE ROAD TRANSPORT CORPORATION</h1>
+            <h2>GENERAL BUS PASS APPLICATION</h2></center>
+    </fieldset>
+    <form action="responsive.html" method="get" autocomplete="off" enctype="multipart/form-data">
+        <fieldset>
+            <legend>Application Details</legend>
+            <label for="name" >name *</label>
+            <input name="name" autocomplete="off"  type="text" maxlength="10" id="name" maxlength="20" pattern="[a-zA-Z]+" title="enter characters small or caps" autofocus required >
+            <label for="fname">father/guardian's Name*</label>
+            <input required name="fathername" id="fname" type="text"maxlength="10" pattern="[a-zA-Z]+" title="enter characters small or caps"><br>
+            <label for="date">Date of birth*</label>
+            <input required id="date" title="enter digits" type="text" pattern="[0-9]+" maxlength="2" name="date" >
+            <label >Gender* </label> 
+            <label for="male" >male</label>
+            <input required type="radio" id="male" value="male" name="gender">
+            <label for="male" >female</label>
+            <input required type="radio" id="female" value="female" name="gender">
+            
+            <br>
+            <label for="age">Ages As No*</label>
+            <input required type="text" name="age" pattern="[0-9]+" maxlength="2" id="age" title="enter digits" >
+            <lable for="year">year</lable>
+            <input required  id="year" type="text" name="year"maxlength="4" minlength="4" pattern="[0-9]+">
+            <label for="month">months</label>
+            <input required  id="month" type="text" name="month" maxlength="2">
+            <label for="day">day</label>
+            <input required id="day" type="text" name="day">
+            <br>
+            <label for="adhar">Aadhaar No:</label>
+            <input  required type="text" id="adhar" name="adhar" maxlength="13" pattern="[a-zA-Z/d]" title="enter caps or small or digits" >
+            <br>
+            <label for="number">Whatsapp number*</label>
+            <input required type="tel" id="number" >
+            <label for="mail">E-mail id*</label>
+            <input required type="email" name="mail" id="mail" pattern="[a-zA-Z0-9]+@gmail.com">
+            <br>
+            <label>Photo*</label>
+            <input required type="file" accept=".pdf..docx">
+        </fieldset>
+        <fieldset>
+            <legend>Residential Address Details</legend>
+            <label for="address">Application Address*</label>
+            <textarea id="address" spellcheck="true" rows="10" cols="15"></textarea>
+            <label >District*</label>
+            <select required name="districts" id="district"required>
+                <option value="andhara">andhra</option>
+                <option value="telangana">telangana</option>
+                <option value="tamilnadu">tamilnadu</option>
+                <option value="kerala">kerala</option>
+            </select>
+                <br>
+                <label>Mandal*</label>
+                <select name="hyderbad" id="andhra">
+                    <option value="hyderbad">hyderbad</option>
+                    <option value="kukatpally">kukatpally</option>
+                  </select>
+                  <label>village</label>
+                  <select>
+                    <option value="village">hyderbad</option>
+                  </select>
+                  <br>
+                  <label>Pincode</label>
+                  <input type="text">
+          </fieldset>
+          <fieldset>
+            <legend>Pass Type Details</legend>
+            <label>City*</label>
+            <select>
+                <option>hyderbad</option>
+                <option>vizag</option>
+            </select>
+            <br>
+            <label>Pass Type*</label>
+            <select>
+                <option>hyderbad</option>
+                <option>vizag</option>
+            </select>
+          </fieldset>
+          <fieldset>
+            <legend>Mode of Paymenta & Pass Collection</legend>
+            <label for="mode"> Payment Mode*</label>
+            <select>
+                <option> select payment mode</option>
+                <option>payment at counter</option>
+            </select>
+            <br>
+            <label>Pass Delivery Mode*</label>
+            <select>
+                <option>select pass Delivery Mode</option>
+                <option>At counter</option>
+            </select><br>
+            <label for="center">Cente at which you want to collect pass*</label>
+            <select id="center">
+                <option>rtc bus stand</option>
+                <option>rtcc complex</option>
+            </select>
+          </fieldset>
+          <center>
+            <img src="catch.jpg" width="200"><br>
+            <input  required type="text"pattern="[CsQ9yk]" title="enter the above text">
+            <br>
+            <input required type="password" placeholder="password" pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*]).{8,16}">
+            <br><input type="submit">
+
+        </center>
+    </form>
+    
+</body>
+</html>
